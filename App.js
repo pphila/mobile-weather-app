@@ -1,5 +1,6 @@
 import React from 'react';
 import  { View, Text, SafeAreaView, StyleSheet } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       
       <View style= {styles.container}>
         <Text>Current Weather</Text>
+        <Feather name='sun' size={100} color="black"/>
         <Text style= {styles.temp}>6</Text>
         <Text style = {styles.feels}>Feels like 5</Text>
         <View style = {styles.highLowWrapper}>
@@ -16,8 +18,8 @@ const App = () => {
       </View>
       
       <View style= {styles.bodyWrapper}>
-        <Text>It's Sunny</Text>
-        <Text>It's perfect T-shirt weather</Text>
+        <Text style= {styles.description}>It's Sunny</Text>
+        <Text style= {styles.message}>It's perfect T-shirt weather</Text>
       </View>
       
     </SafeAreaView>
@@ -26,13 +28,13 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'pink',
+    justifyContent: 'center',
     flex: 1,
     alignItems: 'center',
-    paddingTop: 50
   },
   wrapper: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'pink',
   },
   temp: {
     color: 'black',
@@ -51,7 +53,15 @@ const styles = StyleSheet.create({
   },
   bodyWrapper: {
     justifyContent: 'flex-end',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    paddingLeft: 25,
+    marginBottom: 40
+  },
+  description: {
+    fontSize: 48
+  },
+  message: {
+    fontSize: 30
   }
 })
 export default App;
