@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, SafeAreaView, StyleSheet, FlatList, StatusBar, ImageBackground } from 'react-native';
-import { Feather } from '@expo/vector-icons';
 import ListItem from '../components/ListItem';
 
 const DATA = [
