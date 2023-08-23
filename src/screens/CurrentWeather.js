@@ -35,7 +35,7 @@ const CurrentWeather = () => {
       <RowText messageOne={'Its Sunny'} 
       messageTwo={'Its Perfect T-shirt Weather'} 
       containerStyles={bodyWrapper} 
-      messageOneStyle={description} 
+      messageOneStyles={description} 
       messageTwoStyles={message} />
       
     </SafeAreaView>
